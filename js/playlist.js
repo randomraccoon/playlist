@@ -87,7 +87,6 @@ function getTrackObjFromIdStr(str) {
 function clearSelectedTracks() {
   selectedTrackArr = [];
   SELECTED_TRACKS.textContent = "";
-  console.log(selectedTrackArr);
 }
 
 function submit() {
