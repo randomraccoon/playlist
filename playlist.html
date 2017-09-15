@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Build Playlist</title>
+  <link rel="stylesheet" href="./css/master.css">
+  <link rel="stylesheet" href="./css/playlist.css">
+</head>
+
+<body>
+  <div class="page-container">
+    <div class="header">
+      <p>click an album to add its tracks to the bin</p>
+    </div>
+    <div class="content-container">
+      <div class="album-container"></div>
+      <div id="select-view" class="hidden">
+        <div class="select-container">
+          <div class="album-detail">
+            <p>Add tracks from:</p>
+            <p id="album-title"></p>
+            <img>
+          </div>
+          <div class="album-tracklist">
+            <ul></ul>
+          </div>
+          <div class="arrow"><img src="./resources/arrow.svg"></div>
+          <div class="track-selection">
+            <ul></ul>
+          </div>
+        </div>
+
+        <div class="btn-container">
+          <div id="clear-btn" class="btn">clear tracks</div>
+          <div id="submit-btn" class="btn">submit bin</div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="footer"></div>
+  </div>
+
+  <script type="text/javascript" src="./js/main.js"></script>
+  <script type="text/javascript" src="./js/playlist.js"></script>
+</body>
+
+</html>

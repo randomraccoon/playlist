@@ -1,0 +1,148 @@
+html,
+body
+{
+    height: 100%;
+}
+
+.page-container
+{
+    position: relative;
+
+    min-height: 100%;
+}
+
+.header
+{
+    position: relative;
+
+    height: 100px;
+}
+
+.header > p
+{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+
+.content-container
+{
+    padding-bottom: 40px;
+}
+
+.album-container
+{
+    overflow-x: auto;
+
+    white-space: nowrap;
+}
+
+.album-container > img
+{
+    display: inline-table;
+
+    width: 75px;
+    height: 75px;
+    margin: 15px;
+
+    cursor: pointer;
+}
+
+
+
+.select-container
+{
+    display: flex;
+    align-items: stretch;
+
+    min-height: 200px;
+    max-height: 300px;
+    padding-right: 20px;
+    padding-left: 30px;
+}
+
+.select-container ul
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.select-container ul > li
+{
+    padding: 0 5px;
+
+    user-select: none;
+}
+
+.select-container ul > li:hover
+{
+    cursor: pointer;
+
+    color: white;
+    background-color: #332;
+}
+
+.select-container ul > li:active
+{
+    background-color: #509;
+}
+
+.album-detail
+{
+    /*width: 30%;*/
+    flex-basis: 5;
+}
+.album-detail,
+.album-tracklist,
+.track-selection
+{
+    margin: 2%;
+}
+
+.album-detail > img
+{
+    width: 110px;
+    height: 110px;
+}
+
+.album-tracklist,
+.track-selection
+{
+    overflow: auto;
+    flex-basis: 7;
+
+    box-sizing: border-box;
+    width: 40%;
+    max-height: 100%;
+
+    border: 1px solid black;
+    background-color: rgba(0,0,0,.05);
+}
+
+.arrow
+{
+    display: flex;
+    flex-basis: 1;
+
+    flex-align: center;
+}
+
+.btn-container
+{
+    padding: 10px 50px;
+}
+
+.btn-container > .btn
+{
+    display: inline-block;
+
+    width: 180px;
+    margin: 10px;
+}
+
+.hidden
+{
+    display: none;
+}

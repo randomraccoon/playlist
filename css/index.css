@@ -1,0 +1,91 @@
+body
+{
+    text-transform: lowercase;
+}
+
+.header
+{
+    height: 40px;
+}
+
+.content-container
+{
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+
+    width: 100%;
+
+    border-top: 1px solid black;
+}
+
+.btn-col
+{
+    display: flex;
+    flex-basis: 50%;
+}
+
+.img-col
+{
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+
+    height: 100%;
+
+    text-align: center;
+
+    background: rgba(255,255,255,.7) url(../resources/track.jpg) no-repeat center center;
+    background-size: cover;
+
+    background-blend-mode: lighten;
+}
+
+.img-col > div
+{
+    /*adding 4 empty divs is kinda hacky, but it works.
+    2% margins on the images are relative to total width.*/
+    height: 2%;
+}
+
+.img-col > img
+{
+    height: calc(92%/3);
+    margin: 0 auto;
+}
+
+
+.btn-container
+{
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.btn-container > p
+{
+    font-size: 3em;
+
+    margin: 0;
+
+    color: #509;
+}
+
+a,
+a:link,
+a:active,
+a:visited,
+a:focus,
+a:hover
+{
+    text-decoration: none;
+}
+
+a:active
+{
+    text-decoration: none;
+}
