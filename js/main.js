@@ -15,13 +15,15 @@ function getJSON(url, callback) {
   xhr.send();
 }
 
+//There's a good chance this has an error somewhere, but it's hard to check without some sort of feedback from the receiver
 function post(url, obj, callback) {
   let xhr = new XMLHttpRequest();
   xhr.onload = () => {
     callback(xhr.response);
   };
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
   xhr.open('POST', url);
-  xhr.send();
+  xhr.send(JSON.stringify(obj));
 }
 
 // https://stackoverflow.com/a/12646864/4526570
