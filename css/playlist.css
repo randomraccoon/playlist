@@ -91,8 +91,8 @@ body
 
 .album-detail
 {
-    /*width: 30%;*/
-    flex-basis: 5;
+    flex-basis: 25%;
+    flex-grow: 5;
 }
 .album-detail,
 .album-tracklist,
@@ -111,7 +111,7 @@ body
 .track-selection
 {
     overflow: auto;
-    flex-basis: 7;
+    flex-grow: 7;
 
     box-sizing: border-box;
     width: 40%;
@@ -124,7 +124,7 @@ body
 .arrow
 {
     display: flex;
-    flex-basis: 1;
+    flex-grow: 1;
 
     flex-align: center;
 }
